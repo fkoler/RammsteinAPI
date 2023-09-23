@@ -1,6 +1,6 @@
 const express = require('express');
 
-const memberController = require('../controllers/members.controller');
+const { getMembers, getMemberById } = require('../controllers/members.controller');
 
 const membersRouter = express.Router();
 
@@ -9,7 +9,7 @@ membersRouter.use((req, res, next) => {
     next();
 });
 
-membersRouter.get('/', memberController.getMembers);
-membersRouter.get('/:memberId', memberController.getMemberById);
+membersRouter.get('/', getMembers);
+membersRouter.get('/:memberId', getMemberById);
 
 module.exports = membersRouter;

@@ -5,7 +5,7 @@ function getMembers(req, res) {
     res.json(model);
 };
 
-function getImages(req, res) {
+function getMembersImages(req, res) {
     res.sendFile(path.join(__dirname, '..', 'public', 'images'));
 };
 
@@ -25,5 +25,5 @@ function getMemberById(req, res) {
 module.exports = {
     getMembers,
     getMemberById,
-    getImages,
+    getMembersImages,
 };

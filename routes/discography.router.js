@@ -1,10 +1,16 @@
 const express = require('express');
 
-const discographyController = require('../controllers/discography.controller');
+const { getAlbums, getAlbumById } = require('../controllers/discography.controller');
 
 const discographyRouter = express.Router();
 
-discographyRouter.get('/', discographyController.getAlbums);
-discographyRouter.get('/songs', discographyController.getSongs);
+discographyRouter.use((req, res, next) => {
+    console.log(`IP Address: ${req.ip}`);
+    next();
+});
+
+discographyRouter.get('/', getAlbums);
+discographyRouter.get('/:albumId', getAlbumById);
+// discographyRouter.get('/songs', discographyController.getSongs);
 
 module.exports = discographyRouter;
