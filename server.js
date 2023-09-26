@@ -5,7 +5,7 @@ const app = require('./app');
 
 const PORT = process.env.PORT || 3000;
 
-const MONGO_URL = 'mongodb+srv://Fr3nk:T30d0r@cluster1.iznu2ke.mongodb.net/?retryWrites=true&w=majority';
+const MONGO_URL = 'mongodb+srv://<user>:<pass>@cluster1.iznu2ke.mongodb.net/?retryWrites=true&w=majority';
 
 const server = http.createServer(app);
 
