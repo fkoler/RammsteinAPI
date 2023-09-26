@@ -8,7 +8,7 @@ let jsonData = null;
 async function loadData() {
     try {
         const data = await fs.readFile(dataFilePath, 'utf8');
-        jsonData = JSON.parse(data).Members || [];
+        jsonData = JSON.parse(data).Albums || [];
     } catch (error) {
         console.error('Error reading data from file:', error);
         jsonData = [];
@@ -21,17 +21,17 @@ async function ensureDataLoaded() {
     }
 }
 
-async function getAllMembers() {
+async function getAllAlbums() {
     await ensureDataLoaded();
     return jsonData;
 }
 
-async function getMemberById(memberId) {
+async function getAlbumById(albumId) {
     await ensureDataLoaded();
-    return jsonData.find(member => member.id === memberId) || null;
+    return jsonData.find(album => album.id === albumId) || null;
 }
 
 module.exports = {
-    getAllMembers,
-    getMemberById,
+    getAllAlbums,
+    getAlbumById,
 };

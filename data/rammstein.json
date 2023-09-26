@@ -1,0 +1,130 @@
+{
+    "Members": [
+        {
+            "id": 1,
+            "first_name": "Till",
+            "last_name": "Lindemann",
+            "date_of_birth": "1963-01-04",
+            "birth_location": "Leipzig",
+            "date_of_death": null,
+            "death_location": null,
+            "instrument": "Vocal"
+        },
+        {
+            "id": 2,
+            "first_name": "Paul",
+            "last_name": "Landers",
+            "date_of_birth": "1964-12-09",
+            "birth_location": "East Berlin",
+            "date_of_death": null,
+            "death_location": null,
+            "instrument": "Guitar"
+        },
+        {
+            "id": 3,
+            "first_name": "Christoph",
+            "last_name": "Schneider",
+            "date_of_birth": "1966-05-11",
+            "birth_location": "East Berlin",
+            "date_of_death": null,
+            "death_location": null,
+            "instrument": "Drums"
+        },
+        {
+            "id": 4,
+            "first_name": "Christian",
+            "last_name": "Lorenz",
+            "date_of_birth": "1966-11-16",
+            "birth_location": "East Berlin",
+            "date_of_death": null,
+            "death_location": null,
+            "instrument": "Keyboards"
+        },
+        {
+            "id": 5,
+            "first_name": "Richard",
+            "last_name": "Kruspe",
+            "date_of_birth": "1967-06-24",
+            "birth_location": "Wittenberge",
+            "date_of_death": null,
+            "death_location": null,
+            "instrument": "Guitar"
+        },
+        {
+            "id": 6,
+            "first_name": "Oliver",
+            "last_name": "Riedel",
+            "date_of_birth": "1971-04-11",
+            "birth_location": "Schwerin",
+            "date_of_death": null,
+            "death_location": null,
+            "instrument": "Bass"
+        }
+    ],
+    "Albums": [
+        {
+            "id": 1,
+            "album_name": "Herzeleid",
+            "release_date": "1995-09-25",
+            "studio": "Polar Studios (Stockholm)",
+            "label": "Motor",
+            "producer": "Jacob Hellner, Carl-Michael Herlöfsson"
+        },
+        {
+            "id": 2,
+            "album_name": "Sehnsucht",
+            "release_date": "1997-08-22",
+            "studio": "Temple (St. Paul's Bay)",
+            "label": "Motor",
+            "producer": "Jacob Hellner, Rammstein"
+        },
+        {
+            "id": 3,
+            "album_name": "Mutter",
+            "release_date": "2001-04-02",
+            "studio": "Miraval (Correns)",
+            "label": "Motor, Universal",
+            "producer": "Jacob Hellner, Rammstein"
+        },
+        {
+            "id": 4,
+            "album_name": "Reise, Reise",
+            "release_date": "2004-09-27",
+            "studio": "El Cortijo (Málaga)",
+            "label": "Universal",
+            "producer": "Jacob Hellner, Rammstein"
+        },
+        {
+            "id": 5,
+            "album_name": "Rosenrot",
+            "release_date": "2005-10-28",
+            "studio": "Teldex Studio (Berlin), El Cortijo Studio (Málaga)",
+            "label": "Universal",
+            "producer": "Jacob Hellner, Rammstein"
+        },
+        {
+            "id": 6,
+            "album_name": "Liebe ist für alle da",
+            "release_date": "2009-10-16",
+            "studio": "Sonoma Mountain Recording Estate (San Rafael), Henson (Los Angeles)",
+            "label": "Universal",
+            "producer": "Jacob Hellner, Rammstein"
+        },
+        {
+            "id": 7,
+            "album_name": "Untitled",
+            "release_date": "2019-05-17",
+            "studio": "La Fabrique (Saint-Rémy-de-Provence)",
+            "label": "Universal",
+            "producer": "Olsen Involtini, Rammstein"
+        },
+        {
+            "id": 8,
+            "album_name": "Zeit",
+            "release_date": "2022-04-29",
+            "studio": "La Fabrique (Saint-Rémy-de-Provence)",
+            "label": "Universal",
+            "producer": "Olsen Involtini, Rammstein"
+        }
+    ]
+}

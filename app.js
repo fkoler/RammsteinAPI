@@ -1,9 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const morgan = require('morgan');
 
 const membersRouter = require('./routes/members.router');
-const discographyRouter = require('./routes/discography.router');
+const albumsRouter = require('./routes/albums.router');
 
 const app = express();
 
@@ -13,12 +14,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(cors({
     origin: 'http://localhost:3000',
 }));
-app.use((req, res, next) => {
-    const start = Date.now();
-    next();
-    const delta = Date.now() - start;
-    console.log(`reqMethod:${req.method}, reqBaseURL:${req.baseUrl}, reqURL:${req.url}, time:${delta}ms`);
-});
+
+app.use(morgan('combined'));
 
 app.use('/site', express.static(path.join(__dirname, 'public')));
 
@@ -31,6 +28,6 @@ app.get('/', (req, res) => {
 });
 
 app.use('/members', membersRouter);
-app.use('/discography', discographyRouter);
+app.use('/albums', albumsRouter);
 
 module.exports = app;
