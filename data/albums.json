@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "album_name": "Herzeleid",
+        "release_date": "1995-09-25",
+        "studio": "Polar Studios (Stockholm)",
+        "label": "Motor",
+        "producer": "Jacob Hellner, Carl-Michael Herlöfsson"
+    },
+    {
+        "id": 2,
+        "album_name": "Sehnsucht",
+        "release_date": "1997-08-22",
+        "studio": "Temple (St. Paul's Bay)",
+        "label": "Motor",
+        "producer": "Jacob Hellner, Rammstein"
+    },
+    {
+        "id": 3,
+        "album_name": "Mutter",
+        "release_date": "2001-04-02",
+        "studio": "Miraval (Correns)",
+        "label": "Motor, Universal",
+        "producer": "Jacob Hellner, Rammstein"
+    },
+    {
+        "id": 4,
+        "album_name": "Reise, Reise",
+        "release_date": "2004-09-27",
+        "studio": "El Cortijo (Málaga)",
+        "label": "Universal",
+        "producer": "Jacob Hellner, Rammstein"
+    },
+    {
+        "id": 5,
+        "album_name": "Rosenrot",
+        "release_date": "2005-10-28",
+        "studio": "Teldex Studio (Berlin), El Cortijo Studio (Málaga)",
+        "label": "Universal",
+        "producer": "Jacob Hellner, Rammstein"
+    },
+    {
+        "id": 6,
+        "album_name": "Liebe ist für alle da",
+        "release_date": "2009-10-16",
+        "studio": "Sonoma Mountain Recording Estate (San Rafael), Henson (Los Angeles)",
+        "label": "Universal",
+        "producer": "Jacob Hellner, Rammstein"
+    },
+    {
+        "id": 7,
+        "album_name": "Untitled",
+        "release_date": "2019-05-17",
+        "studio": "La Fabrique (Saint-Rémy-de-Provence)",
+        "label": "Universal",
+        "producer": "Olsen Involtini, Rammstein"
+    },
+    {
+        "id": 8,
+        "album_name": "Zeit",
+        "release_date": "2022-04-29",
+        "studio": "La Fabrique (Saint-Rémy-de-Provence)",
+        "label": "Universal",
+        "producer": "Olsen Involtini, Rammstein"
+    }
+]

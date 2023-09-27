@@ -1,35 +1,18 @@
-const fs = require('fs').promises;
-const path = require('path');
-
-const dataFilePath = path.join(__dirname, '..', 'data', 'rammstein.json');
-
-let jsonData = null;
-
-async function loadData() {
-    try {
-        const data = await fs.readFile(dataFilePath, 'utf8');
-        jsonData = JSON.parse(data).Members || [];
-    } catch (error) {
-        console.error('Error reading data from file:', error);
-        jsonData = [];
-    }
-}
-
-async function ensureDataLoaded() {
-    if (!jsonData) {
-        await loadData();
-    }
-}
+const members = require('./members.schema');
 
 async function getAllMembers() {
-    await ensureDataLoaded();
-    return jsonData;
-}
+    return await members.find({}, { '_id': 0 });
+};
 
 async function getMemberById(memberId) {
-    await ensureDataLoaded();
-    return jsonData.find(member => member.id === memberId) || null;
-}
+    try {
+        const member = await members.findOne({ id: memberId }, { '_id': 0 }).exec();
+        return member || null;
+    } catch (error) {
+        throw error;
+    }
+};
+
 
 module.exports = {
     getAllMembers,
